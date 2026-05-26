@@ -6696,6 +6696,12 @@
   html.dark .text-gray-500 { color: #94A3B8 !important; }
   html.dark .border-gray-200\/70,
   html.dark .border-gray-200 { border-color: rgba(255,255,255,0.08) !important; }
+  /* Tailwind divide-x / divide-y utilities set border-color on the children via
+     the parent's divide-gray-200* class. The parent class doesn't apply directly
+     to the child element, so the .border-gray-200 rule above doesn't catch it. */
+  html.dark .divide-gray-200\/70 > *,
+  html.dark .divide-gray-200 > *,
+  html.dark .divide-dashed > * { border-color: rgba(255,255,255,0.08) !important; }
 
   /* Pill chip for "Engines" — keep the green tint but readable on dark */
   html.dark .bg-emerald-400\/10 { background-color: rgba(52, 211, 153, 0.15) !important; }
