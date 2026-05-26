@@ -40,13 +40,13 @@ DARK_OVERRIDES = """
   html.dark .text-gray-600,
   html.dark .text-gray-500 { color: #94A3B8 !important; }
   html.dark .border-gray-200\\/70,
-  html.dark .border-gray-200 { border-color: rgba(255,255,255,0.08) !important; }
+  html.dark .border-gray-200 { border-color: #141C2E !important; }
   /* Tailwind divide-x / divide-y utilities set border-color on the children via
      the parent's divide-gray-200* class. The parent class doesn't apply directly
      to the child element, so the .border-gray-200 rule above doesn't catch it. */
   html.dark .divide-gray-200\\/70 > *,
   html.dark .divide-gray-200 > *,
-  html.dark .divide-dashed > * { border-color: rgba(255,255,255,0.08) !important; }
+  html.dark .divide-dashed > * { border-color: #141C2E !important; }
 
   /* Pill chip for "Engines" — keep the green tint but readable on dark */
   html.dark .bg-emerald-400\\/10 { background-color: rgba(52, 211, 153, 0.15) !important; }
@@ -61,7 +61,7 @@ DARK_OVERRIDES = """
   html.dark svg.hub-orbit circle[stroke="rgba(0,0,0,0.10)"] { stroke: rgba(255, 255, 255, 0.18); }
 
   /* Header */
-  html.dark header { background: #0B0F19; border-color: rgba(255,255,255,0.08) !important; }
+  html.dark header { background: #0B0F19; border-color: #141C2E !important; }
   html.dark header a, html.dark header span,
   html.dark header li > a { color: #E5E7EB !important; }
   html.dark header button { background: #E5E7EB !important; color: #0B0F19 !important; }
